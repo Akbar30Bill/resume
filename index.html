@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Shahverdi — Backend Engineer</title>
+  <meta name="description" content="Ali Shahverdi is a backend engineer in Istanbul. This is his apartment. He is busy living and shipping. Click around — the résumé is hidden in the room." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏙️</text></svg>" />
+  <link rel="preload" as="image" href="/resume/sprites/ali-idle-down.png" />
+  <script type="module" crossorigin src="/resume/assets/index-Dcth3TFr.js"></script>
+  <link rel="stylesheet" crossorigin href="/resume/assets/index-D8oV71Ae.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="scene"></canvas>
+
+    <!-- whisper-thin HUD -->
+    <header id="hud">
+      <div id="hud-name">
+        <h1>ALI SHAHVERDI</h1>
+        <p>Backend Engineer</p>
+      </div>
+    </header>
+
+    <div id="hud-chip">
+      <span id="clock" title="Istanbul time">--:--</span>
+      <span class="sep">·</span>
+      <button id="btn-sound" title="Sound off">🔇</button>
+      <button id="btn-text" title="Text mode (Esc)">📄</button>
+    </div>
+
+    <!-- hotspot dialog -->
+    <div id="dialog" hidden>
+      <button id="dialog-close" aria-label="Close">×</button>
+      <h2 id="dialog-title"></h2>
+      <div id="dialog-body"></div>
+    </div>
+
+    <!-- TEXT MODE: the classic résumé. SSR-friendly, crawlable, ATS-safe. -->
+    <main id="textmode" hidden>
+      <article>
+        <header>
+          <h1>Ali Shahverdi</h1>
+          <p class="contact">
+            Istanbul, Turkey ·
+            <a href="mailto:alishahverdi2010@yahoo.com">alishahverdi2010@yahoo.com</a> ·
+            <a href="tel:+905379719841">+90 (537) 971 9841</a> ·
+            <a href="https://www.linkedin.com/in/ali-shahverdi/">linkedin.com/in/ali-shahverdi</a> ·
+            <a href="/resume/resume.pdf" download>résumé.pdf</a>
+          </p>
+          <p class="backnote">press <kbd>Esc</kbd> to go back to the apartment</p>
+        </header>
+
+        <section>
+          <h2>Summary</h2>
+          <p>Backend engineer with seven years of experience on systems where a bug moves real money. At bunq I own the crypto integration and have shipped staking, savings, and tax-reporting products handling millions of euros. Before that I ran blockchain nodes and indexers on AWS and built trading bots and backtesting tools for leveraged liquidity pools. My main stack is Node.js, TypeScript, PostgreSQL, and Elasticsearch, with Python for tooling.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <article>
+            <h3>Backend Engineer — bunq.com <span class="dates">2024 – Present</span></h3>
+            <ul>
+              <li>Own the cryptocurrency integration end to end, built on Kraken's service suite.</li>
+              <li>Shipped staking, savings, and tax-reporting products handling millions of euros.</li>
+              <li>Built backend services on a custom architecture, using Elasticsearch to make large, frequently queried datasets fast to access instead of querying SQL directly.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Blockchain Infrastructure Engineer — Autonomy Network <span class="dates">2022 – 2024</span></h3>
+            <ul>
+              <li>Built on-chain backtesting tools for leveraged delta-neutral liquidity pools.</li>
+              <li>Developed, optimized, and monitored production trading bots.</li>
+              <li>Ran high-performance blockchain nodes on AWS and set up infrastructure monitoring for them.</li>
+              <li>Tools: Python, AWS, Docker.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Backend Engineer — Wallex.ir <span class="dates">2020 – 2022</span></h3>
+            <ul>
+              <li>Set up Tron, Bitcoin, and Ethereum nodes and indexers.</li>
+              <li>Built deposit and withdrawal services for EVM chains and a Bitcoin withdrawal service in Node.js.</li>
+              <li>Built a rebalancing service for account-based blockchains in Node.js.</li>
+              <li>Set up GitLab CI for a monorepo.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Technical Director — Sonido.io <span class="dates">2021 – 2022</span></h3>
+            <ul>
+              <li>Wrote, tested, and deployed Solidity contracts for an NFT marketplace.</li>
+              <li>Set up the platform's infrastructure.</li>
+              <li>Managed a team of 4 developers.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>DevOps/Backend Engineer — Address.ir <span class="dates">2018 – 2020</span></h3>
+            <ul>
+              <li>Built a cross-company catalog publishing platform and REST API in Node.js, PostgreSQL, and Elasticsearch.</li>
+              <li>Restored company internet connectivity during a nationwide outage.</li>
+              <li>Ran A/B tests on machine learning models.</li>
+              <li>Maintained production servers.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <article>
+            <h3>BSc Computer Engineering — University of Tehran <span class="dates">2018</span></h3>
+            <p>Thesis: Integration of Blockchain Infrastructure for Trust Management in IoT Devices within Supply Chain Systems.</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li><strong>Languages:</strong> Python, Node.js, TypeScript, SQL, PHP, Java</li>
+            <li><strong>Data & search:</strong> PostgreSQL, MySQL, Redis, Elasticsearch, TypeORM · Sequelize · Mongoose, data modeling, query optimization</li>
+            <li><strong>Messaging & APIs:</strong> RabbitMQ, gRPC, REST, GraphQL</li>
+            <li><strong>Blockchain:</strong> Tron, Bitcoin, Ethereum nodes & indexers, EVM, Solidity contracts</li>
+            <li><strong>Infrastructure:</strong> AWS, Docker, GitLab CI, Git, infrastructure monitoring, Bash/POSIX shell scripting</li>
+            <li><strong>Development:</strong> Planning, AI code generation, code review</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <ul>
+            <li>English: Fluent</li>
+            <li>Persian: Fluent</li>
+            <li>Turkish: Beginner</li>
+          </ul>
+        </section>
+
+        <footer>
+          <p>This site is a playable pixel-art apartment. <noscript>Enable JavaScript to visit the apartment — or just read this page, it has everything.</noscript></p>
+          <p class="credits">Built by Ali and the Machine. Pixel art by <a href="https://limezu.itch.io/">LimeZu</a> (Modern Interiors / Modern Office).</p>
+        </footer>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
